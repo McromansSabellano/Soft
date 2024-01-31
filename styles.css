@@ -5,12 +5,13 @@ body {
 }
 
 nav {
-    background-color: #ffc017;
+    background-color: #003fe8;
+    color: white;
     height: 75px;
 
     display: flex;
     justify-content: space-evenly;
-    border-bottom: solid 1px;
+    border-bottom: solid 1px black;
 }
 
 .logo-container {
@@ -32,7 +33,7 @@ nav {
   
 .circle {
     margin: 0.5px;  
-    background-color: black;    
+    background-color: white;    
     height: 100%;   
     border-radius: 50%; 
 }
@@ -69,8 +70,8 @@ a {
 }
 
 nav>ul>li:last-child {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     height: 2rem;
     /* width: 10rem; */
 
