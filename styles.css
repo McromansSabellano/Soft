@@ -118,5 +118,17 @@ a {
     border-radius: 2rem;
 }
 
-.hero>span:last-child {
+.trendings {
+    padding: 0 128px;
+}
+
+.article-group {
+    display: grid;
+    /* grid-template-columns: repeat(3,1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.article {
+    margin: 5px
 }
