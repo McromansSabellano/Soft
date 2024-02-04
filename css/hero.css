@@ -1,0 +1,43 @@
+@import url(styles.css);
+
+.hero {
+    display: flex;
+    background-color: var(--blue);
+    justify-content: space-between;
+    min-height: 454px;
+
+    border-bottom: solid 1px black;
+    padding: 0 var(--left-right-spacing);
+
+    padding-top: 75px;
+}
+
+.hero span {
+    width: 50%;
+}
+
+.text-content {
+    color: var(--white);
+
+    /* display: flex; */
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.text-content h1 {
+    font-size: 5rem;
+    margin-bottom: 0;
+}
+
+.text-content p {
+    font-size: 2rem;
+    width: 440px;
+}
+
+.text-content .button {
+    width: 7.5rem;
+    font-size: 20px;
+    height: 2.5rem;
+
+    border-radius: 2rem;
+}
