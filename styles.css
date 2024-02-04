@@ -10,8 +10,10 @@ nav {
     height: 75px;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     border-bottom: solid 1px black;
+
+    padding: 0 15%;
 }
 
 .logo-container {
@@ -86,18 +88,23 @@ a {
 .hero {
     display: flex;
     background-color: #003fe8;
-    justify-content: space-around;
+    justify-content: space-between;
+    min-height: 454px;
 
     border-bottom: solid 1px black;
+    padding: 0 15%;
+}
+
+.hero span {
+    width: 50%;
 }
 
 .text-content {
     color: #EAEAEA;
-    height: 454px;
 
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
-    margin: 0 -2.5rem;
+
 }
 
 .text-content h1 {
@@ -118,17 +125,21 @@ a {
     border-radius: 2rem;
 }
 
+.content {
+    margin: 0 15%;
+}
+
 .trendings {
-    padding: 0 128px;
+    /* margin: 0 17%; */
 }
 
 .article-group {
     display: grid;
     /* grid-template-columns: repeat(3,1fr); */
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-template-rows: repeat(2, 1fr);
 }
 
 .article {
-    margin: 5px
+    margin: 0;
 }
