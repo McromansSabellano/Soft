@@ -16,7 +16,7 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: repeat(2, 1fr);
 
-    gap: 80px;
+    gap: 0 80px;
 
     counter-reset: item;
 }
@@ -24,7 +24,7 @@
 .article {
     display: grid;
     grid-template-columns: 1fr 6fr;
-    margin-bottom: -70px;
+    /* margin-bottom: -70px;z */
 }
 
 .article-rank {
