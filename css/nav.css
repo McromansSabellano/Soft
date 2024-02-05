@@ -2,13 +2,14 @@
 
 header {
     position: fixed;
+    width: 100vw;
 }
 
 nav {
     /* background-color: #003fe8 */
     color: var(--white);
     height: 75px;
-    width: 80vw;
+    /* width: 80vw; */
     backdrop-filter: blur(200px);
 
     display: flex;
@@ -28,5 +29,5 @@ nav ul {
 
 nav li {
     display: block;
-    margin: 1rem;
+    margin-left: 2rem;
 }
