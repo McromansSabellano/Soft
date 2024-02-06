@@ -22,7 +22,7 @@ nav {
 nav ul {
     display: flex;
     align-items: center;
-    padding-inline-start: 0;
+    flex-wrap: wrap;
     margin-block: 0;
     height: 100%;
 }
@@ -30,4 +30,5 @@ nav ul {
 nav li {
     display: block;
     margin-left: 2rem;
+    /* width: 100%; */
 }
