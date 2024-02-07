@@ -2,6 +2,7 @@
 @import url(nav.css);
 @import url(hero.css);
 @import url(content.css);
+@import url(footer.css);
 
 :root {
     --left-right-spacing: 12%;
@@ -17,7 +18,11 @@
     }
 
     .daillies {
-        grid-area: 3/1/2/7;
+        grid-area: 3/1/4/7;
+    }
+
+    footer {
+        display: block;
     }
 }
 
