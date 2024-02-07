@@ -24,6 +24,10 @@
     footer {
         display: block;
     }
+
+    .footer-menu {
+        display: none;
+    }
 }
 
 body {

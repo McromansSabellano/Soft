@@ -10,6 +10,23 @@
     /* grid-area: 2; */
 }
 
+.footer-menu {
+    grid-area: 3/5/3/7;
+}
+
+.footer-menu-links {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 0;
+    margin: 0;
+}
+
+.footer-menu-links li {
+    display: block;
+    margin-right: 1.5rem;
+}
+
 .content {
     padding: 0 var(--left-right-spacing);
     display: grid;
@@ -17,6 +34,8 @@
 
     grid-template-columns: repeat(6, 1fr);
     /* grid-template-rows: repeat(2, 1fr); */
+
+    row-gap: 2rem;
 }
 
 .trendings {
