@@ -16,7 +16,7 @@
     /* grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); */
 
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    /* grid-template-rows: repeat(2, 1fr); */
 }
 
 .trendings {
@@ -94,6 +94,15 @@
     margin-block: 0;
     height: 100%;
 }
-.tags li {margin: .75rem .5rem .75rem 0;
+.tags li {
+    margin: .75rem .5rem .75rem 0;
     display: block;
+}
+
+.header {
+    font-size: 1.25rem;
+}
+
+.discover-more {
+    color: var(--purple);
 }
