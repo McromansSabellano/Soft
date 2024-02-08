@@ -25,13 +25,14 @@
 }
 
 .text-content h1 {
-    font-size: 5rem;
+    font-size: 6rem;
     margin-bottom: 0;
 }
 
 .text-content p {
     font-size: 2rem;
     width: 440px;
+    margin-top: 0;
 }
 
 .text-content .button {
