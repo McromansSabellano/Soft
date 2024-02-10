@@ -4,6 +4,15 @@
     --white: #EAEAEA;
     --blue: #003fe8;
     --purple: #a354a5;
+
+    /* Font Sizes */
+    --font-size-xs: 13px;
+    --font-size-sm: 14px;
+    --font-size-md: 16px;
+    --font-size-lg: 20px;
+    --font-size-xl: 24px;
+
+    --font-size-xxxl: 106px;
 }
 
 body {
@@ -90,7 +99,7 @@ nav {
     padding: 0 var(--left-right-spacing);
 }
 
-nav ul {
+.nav-links {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -98,10 +107,10 @@ nav ul {
     height: 100%;
 }
 
-nav li {
+.nav-links li  {
     display: block;
     margin-left: 2rem;
-    /* width: 100%; */
+    font-size: var(--font-size-sm);
 }
 
 /* HERO SECTION */
@@ -117,39 +126,46 @@ nav li {
 
     padding-top: 75px;
 }
-
+/* 
 .hero span {
     width: 50%;
-}
+} */
 
 .text-content {
     color: var(--white);
-
-    /* display: flex; */
+    width: 100%;
     flex-direction: column;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
 }
 
 .text-content h1 {
-    font-size: 6rem;
-    margin-bottom: 0;
+    font-size: var(--font-size-xxxl);
+    /* text-wrap: nowrap; */
+    margin-bottom: 25px;
 }
 
 .text-content p {
-    font-size: 2rem;
+    font-size: var(--font-size-xl);
     width: 440px;
     margin-top: 0;
+    margin-bottom: 50px;
 }
 
 .text-content .button {
-    width: 7.5rem;
-    font-size: 20px;
+    /* width: 9rem; */
+    padding: 0.5rem 3.5rem;
+    font-size: var(--font-size-lg);
     height: 2.5rem;
 
     border-radius: 2rem;
 }
 
 /* CONTENT */
+
+.section-header {
+    font-size: var(--font-size-md);
+    /* font-size: 16px; */
+}
 
 .discover {
     grid-area: 2/5/2/7;
@@ -176,6 +192,8 @@ nav li {
 .footer-menu-links li {
     display: block;
     margin-right: 1.5rem;
+
+    font-size: var(--font-size-xs);
 }
 
 .content {
@@ -225,7 +243,7 @@ nav li {
 .metadata {
     display: flex;
     color: grey;
-    font-size: 12px;
+    font-size: var(--font-size-xs);
 }
 
 .dot-divider {
@@ -236,9 +254,9 @@ nav li {
     border-radius: 50%;
 }
 
-.title {
+.trendings .title {
     font-weight: bold;
-    font-size: 17px;
+    font-size: var(--font-size-md);
 
     margin-top: 0;
     margin-bottom: 0;
@@ -249,8 +267,11 @@ nav li {
 }
 
 .profile {
-    font-size: 14px;
     margin-bottom: -10px;
+}
+
+.profile-name {
+    font-size: var(--font-size-xs);
 }
 
 .tags {
@@ -268,6 +289,8 @@ nav li {
 .tags li {
     margin: .75rem .5rem .75rem 0;
     display: block;
+
+    font-size: var(--font-size-sm);
 }
 
 .header {
@@ -276,6 +299,18 @@ nav li {
 
 .discover-more {
     color: var(--purple);
+    font-size: var(--font-size-sm);
+}
+
+/* DAILIES */
+
+.dailies .title{
+    font-size: var(--font-size-lg);
+    font-weight: 1000;
+}
+
+.dailies .preview {
+    font-size: var(--font-size-md);
 }
 
 /* FOOTER SECTION */
@@ -314,6 +349,8 @@ footer .circle {
 footer li {
     display: block;
     margin-right: 1rem;
+
+    font-size: var(--font-size-xs);
 }
 
 footer ul {
