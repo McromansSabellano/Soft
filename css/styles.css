@@ -125,6 +125,7 @@ nav {
     padding: 0 var(--left-right-spacing);
 
     padding-top: 75px;
+    padding-bottom: 15px;
 }
 /* 
 .hero span {
@@ -158,6 +159,8 @@ nav {
     height: 2.5rem;
 
     border-radius: 2rem;
+
+    /* margin-bottom: 10000px; */
 }
 
 /* CONTENT */
@@ -168,17 +171,20 @@ nav {
 }
 
 .discover {
-    grid-area: 2/5/2/7;
+    grid-area: 2/9/2/13;
     /* grid-area: 2; */
 }
 
+
 .dailies {
-    grid-area: 2/1/2/5;
+    grid-area: 2/1/2/8;
     /* grid-area: 2; */
 }
 
 .footer-menu {
-    grid-area: 3/5/3/7;
+    grid-area: 3/9/3/13;
+
+    /* position:sticky; */
 }
 
 .footer-menu-links {
@@ -193,7 +199,7 @@ nav {
     display: block;
     margin-right: 1.5rem;
 
-    font-size: var(--font-size-xs);
+    font-size: var(--font-size-sm);
 }
 
 .content {
@@ -201,7 +207,7 @@ nav {
     display: grid;
     /* grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); */
 
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     /* grid-template-rows: repeat(2, 1fr); */
 
     row-gap: 2rem;
@@ -234,9 +240,10 @@ nav {
 
 .article-rank {
     font-size: 2rem;
+    font-weight: 900;
 }
 .article-rank::before {
-    content: counter(item);
+    content: "0" counter(item);
     counter-increment: item;
 }
 
@@ -307,9 +314,13 @@ nav {
 .dailies .title{
     font-size: var(--font-size-lg);
     font-weight: 1000;
+    margin-bottom: 10px;
 }
 
 .dailies .preview {
+    margin-top: 0;
+    margin-bottom: 0;
+
     font-size: var(--font-size-md);
 }
 
