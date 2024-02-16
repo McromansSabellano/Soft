@@ -82,7 +82,7 @@ a {
 
 header {
     position: fixed;
-    width: 100vw;
+    width: 100%;
 }
 
 nav {
@@ -104,7 +104,6 @@ nav {
     align-items: center;
     flex-wrap: wrap;
     margin-block: 0;
-    height: 100%;
 }
 
 .nav-links li  {
@@ -130,7 +129,6 @@ nav {
 
 .text-content {
     color: var(--white);
-    width: 100%;
     flex-direction: column;
 }
 
@@ -141,7 +139,7 @@ nav {
 
 .text-content p {
     font-size: var(--font-size-xl);
-    width: 440px;
+    max-width: 440px;
     margin-top: 0;
     margin-bottom: 50px;
 }
@@ -317,6 +315,8 @@ footer {
     grid-area: 4/1/5/7;
 
     background-color: var(--white);
+
+    width: 100%;
 }
 
 footer>section {
@@ -355,7 +355,27 @@ footer ul {
     margin: 0;
 }
 
+@media only screen and (max-width: 550px) {
+    .nav-links>li:not(:last-child) {
+        display: none;
+    }
+
+    .preview {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .nav-links>li:not(:last-child, :nth-child(4)) {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 1001px)  { 
+    .content {
+        column-gap: 0;
+    }
+
     .right-container {
         grid-area: 2/-1;
         position: relative;
